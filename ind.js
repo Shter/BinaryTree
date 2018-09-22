@@ -69,19 +69,23 @@ class BinaryTree {
         }
     }
 
-    toArray(node){
+    toArrayInternal(node){
         if(node !== null){
-            this.toArray(node.left);
-            this.toArray(node.right);
+            this.toArrayInternal(node.left);
             console.log(node.data);
+            this.toArrayInternal(node.right);
+
         }
+
+    }
+
+    toArray(){
+        this.toArrayInternal(this.getRootNode());
     }
 
     getRootNode(){
         return this.comparator;
     }
-
-
 }
 
 var Binary = new BinaryTree();
@@ -90,5 +94,4 @@ Binary.insert('b');
 Binary.insert('c');
 Binary.insert('a');
 Binary.remove('f');
-let roots = Binary.getRootNode();
-Binary.toArray(roots);
+Binary.toArray();
