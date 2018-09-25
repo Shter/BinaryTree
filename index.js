@@ -1,3 +1,4 @@
+const BinaryTree = require ('./ind.js');
 let tree = new BinaryTree();
 
 tree.insert('b');
@@ -13,7 +14,7 @@ tree.insert('b');
 console.log(tree.height());// 3
 console.log(tree.toArray());// ['a','b','c']
 
-tree.insert('z');
+/*tree.insert('z');
 
 console.log(tree.height());// 3
 console.log(tree.toArray());// ['a','b','c','z']
@@ -55,4 +56,4 @@ tree.remove('d');
 tree.remove('e');
 
 console.log(tree.height());// 0
-console.log(tree.toArray());// []
+console.log(tree.toArray());// []*/
