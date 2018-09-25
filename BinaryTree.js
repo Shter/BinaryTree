@@ -163,7 +163,7 @@ try{
     console.log(message)// This tree does not contain 'x'
 }
 
-tree = require ('./ind.js');
+tree = require ('./BinaryTree.js');
 
 tree.insert('a');
 tree.insert('b');
