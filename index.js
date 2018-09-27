@@ -1,4 +1,5 @@
-let tree = require ('./BinaryTree.js');
+let Tree = require ('./BinaryTree.js');
+let tree = new Tree();
 
 tree.insert('b');
 tree.insert('a');
@@ -37,8 +38,7 @@ try{
     console.log(message)// This tree does not contain 'x'
 }
 
-tree = require ('./BinaryTree.js');
-console.log(tree);
+tree = new Tree();
 
 tree.insert('a');
 tree.insert('b');
